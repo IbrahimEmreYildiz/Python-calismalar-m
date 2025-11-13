@@ -114,6 +114,7 @@ print("Numara:", numara, "Ad:", ad, "Soyad:", soyad, "Ortalama:", ortalama)
 # burada püf nokta şu reverse() yeni bir dizi oluşturmaz mevcut diziyi değiştirir
 # ve join ise sadece string içeren listelere uygulanır 
 # ve önden listenin üyeleri arasına ne koyacağını belirtmen lazım.
+"""
 veri=input("Lütfen bir cümle giriniz: ")
 
 büyük= veri.upper()
@@ -125,3 +126,24 @@ ayrık.reverse()
 son=" ".join(ayrık)
 
 print(son)
+
+
+# Bir stringi değiştirmek python'da imkansız sadece yeni bir string oluşturarak yapabiliriz
+
+metin= "Python çalışıyorum"
+
+metin= "Z" + metin[1:]
+"""
+# Kullanıcıdan bir kelime al kelimeyi tersten yazdır ama 2 türlü bir for döngüsü bir de slicing
+# Örnek Python-nohtyP
+
+kelime=input("Kelime giriniz: ")
+
+print(kelime[::-1]) # slicing'de -1 tersten gelerek 1er 1er yaz demek
+
+# for ile çözüm
+ters_kelime=""
+
+for harf in kelime:
+    ters_kelime= harf + ters_kelime
+print(ters_kelime)
