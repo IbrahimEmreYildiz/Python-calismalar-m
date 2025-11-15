@@ -1,5 +1,5 @@
 #STRING FONKSİYONLAR VS.
-
+import random
 """
 metin="Emre yıldız"
 # Karakter sayısı
@@ -133,7 +133,7 @@ print(son)
 metin= "Python çalışıyorum"
 
 metin= "Z" + metin[1:]
-"""
+
 # Kullanıcıdan bir kelime al kelimeyi tersten yazdır ama 2 türlü bir for döngüsü bir de slicing
 # Örnek Python-nohtyP
 
@@ -147,3 +147,66 @@ ters_kelime=""
 for harf in kelime:
     ters_kelime= harf + ters_kelime
 print(ters_kelime)
+
+# Bir cümledeki aradığımız harf sayısı ve onun ilk bulunduğu index
+
+sentence=input("Lütfen bir cümle giriniz: ")
+
+while True:
+    character=input("Lütfen bir harf giriniz:")
+    if len(character) != 1:
+        print("Sadece 1 harf giriniz!")
+    else:
+        break
+
+index = sentence.find(character)
+tane = sentence.count(character)
+if index==-1:
+    print("Aradığınız harf cümlede yok.")
+
+else:
+
+    print(f"Aradığınız harf cümlede {tane} kere var ve bulunduğu ilk index {index}. indextir.")
+
+# içinde aradığımız harf bulunan kelime sayısı
+
+
+cümle=input("Lütfen cümle gir: ")
+harf=input("Lütfen harf gir: ")
+
+kelimeler= cümle.split()
+sayac=0
+for kelime in kelimeler:
+    if harf in kelime.lower():
+        sayac+=1
+
+print(f"İçinde aradığımız harf bulunan kelime sayısı {sayac}'tır.")
+"""
+"""
+Aşağıdaki adımları izleyerek bir Python programı yazınız:
+
+I. Adım) 1 ile 35 arasında (1 ve 35 dahil) rastgele üretilen tam sayılardan oluşan bir liste oluşturun. 
+Bu liste, 1 haftanın (7 günün) her bir günü için ölçülen ortalama sıcaklık değerlerini temsil etsin.
+
+II. Adım) Bu listeyi ekrana yazdırın.
+
+III. Adım) Bu 7 günün (yani haftanın) ortalama sıcaklığını hesaplayıp ekrana yazdırın.
+"""
+
+
+sicaklik_ortalaması=[]
+
+for sayi in range(7):
+    sayi= random.randint(1,35)
+    sicaklik_ortalaması.append(sayi)
+
+print("Haftanın sıcaklık değerli şu şekildedir:",sicaklik_ortalaması)
+
+toplam=0
+
+for sicaklik in sicaklik_ortalaması:
+    toplam +=sicaklik
+
+ortalama=toplam/7
+ortalama = round(ortalama,2)
+print(f"Sıcaklık ortalaması {ortalama}'dır.")
