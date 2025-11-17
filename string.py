@@ -1,6 +1,6 @@
 #STRING FONKSİYONLAR VS.
 import random
-"""
+
 metin="Emre yıldız"
 # Karakter sayısı
 print(len(metin))
@@ -41,8 +41,8 @@ print(cümle.split())
 list=["Solo","il","Gala"]
 cümle1= " ".join(list) #aralarına boşluk bırak diyebilmek için ekledik tırnak işaretini
 print(cümle1)
-"""
-"""
+
+
 # find() cümlede aradığımız kelimenin kaçıncı karakterde başladığını söyler
 
 cümle2= "En büyük cimbom"
@@ -64,15 +64,13 @@ sayaç= cümle3.count(" Python ")
 print(sayaç)
 
 # Birkaç basit fonksiyon
-"""
-"""
+
 string.isalpha() -> Tüm karakterler harf ise True, değilse False.  
 string.isdigit() -> Tüm karakterler sayı ise True, değilse False.  
 string.isalnum() -> Harf veya rakam (alfanümerik) ise True, değilse False.  
 string.islower() -> Tüm harfler küçük ise True, değilse False.  
 string.isupper() -> Tüm harfler büyük ise True, değilse False.
-"""
-""""
+
 a = "Merhaba"
 b = "Merhaba123"
 print(a.isalpha())   # True  → sadece harfler var
@@ -97,9 +95,8 @@ k1 = "HELLO"
 k2 = "Hello"
 print(k1.isupper())  # True  → tüm harfler büyük
 print(k2.isupper())  # False → bir harf küçük
-"""
 
-"""
+
 
 # python çoklu atama (unpacking ya da destructring)
 
@@ -109,12 +106,12 @@ numara, ad, soyad, ortalama= [parca.strip() for parca in metin.split(",")] #Bura
 # Örneğin parca=104 olur boşluk varsa temizler sonra Ali parcaya atanır ve boşluklar temizlenir..
 
 print("Numara:", numara, "Ad:", ad, "Soyad:", soyad, "Ortalama:", ortalama)
-"""
+
 
 # burada püf nokta şu reverse() yeni bir dizi oluşturmaz mevcut diziyi değiştirir
 # ve join ise sadece string içeren listelere uygulanır 
 # ve önden listenin üyeleri arasına ne koyacağını belirtmen lazım.
-"""
+
 veri=input("Lütfen bir cümle giriniz: ")
 
 büyük= veri.upper()
@@ -181,7 +178,7 @@ for kelime in kelimeler:
         sayac+=1
 
 print(f"İçinde aradığımız harf bulunan kelime sayısı {sayac}'tır.")
-"""
+
 """
 Aşağıdaki adımları izleyerek bir Python programı yazınız:
 
