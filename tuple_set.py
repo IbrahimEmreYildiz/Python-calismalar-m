@@ -1,5 +1,5 @@
 # TUPLES-> Immutable yani sonradan değişemezler ama listeler sonradan değişebilir.
-"""
+
 liste=["Emre","Kaan","Mehmet"]
 liste[0]="Torreira"
 print(liste)
@@ -15,7 +15,7 @@ print(tuples.count("Yaz"))
 print(liste.index("Mehmet"))
 print(tuples.index("Kış"))
 
-"""
+
 # SET (kümeler) normal matematikteki kümelerle aynı özellikte sayılır
 sebzeler={"Ispanak", "Pırasa", "Lahana", "Patlıcan", "Patates","kiraz"}# kiraz sebze değil ama kesişimi göstermek için
 meyveler={"elma","armut","kiraz","erik","kavun"} #ben buraya 2 tane kiraz yazsam da çıktıda 1 tane verir
